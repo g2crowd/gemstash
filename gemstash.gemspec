@@ -52,12 +52,6 @@ you push your own private gems as well."
   # Run Gemstash with the mysql2 adapter
   # spec.add_runtime_dependency "mysql2", "~> 0.4"
 
-  if RUBY_PLATFORM == "java"
-    spec.add_runtime_dependency "jdbc-sqlite3", "~> 3.8"
-  else
-    spec.add_runtime_dependency "sqlite3", "~> 1.3"
-  end
-
   spec.add_development_dependency "aruba", [">= 0.14"]
   spec.add_development_dependency "aws-sdk-s3", "~> 1.67"
   spec.add_development_dependency "bundler", [">= 1.11", "< 3.0"]
